@@ -20,4 +20,5 @@ add_action( 'wp_enqueue_scripts', 'bowl_bound_enqueue_scripts', 21 );
  */
 function bowl_bound_enqueue_scripts() {
 	wp_dequeue_script( 'wsu-spine' );
+	wp_enqueue_style( 'graduate', '//fonts.googleapis.com/css?family=Graduate' );
 }
