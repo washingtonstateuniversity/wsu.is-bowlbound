@@ -22,3 +22,27 @@ function bowl_bound_enqueue_scripts() {
 	wp_dequeue_script( 'wsu-spine' );
 	wp_enqueue_style( 'graduate', '//fonts.googleapis.com/css?family=Graduate' );
 }
+
+add_filter( 'nav_menu_css_class', 'bowl_bound_remove_menu_classes' );
+/**
+ * Remove menu item classes output by WordPress.
+ *
+ * @since 0.0.1
+ *
+ * @return array
+ */
+function bowl_bound_remove_menu_classes() {
+	return array();
+}
+
+add_filter( 'nav_menu_item_id', 'bowl_bound_remove_menu_ids' );
+/**
+ * Remove menu item ids output by WordPress.
+ *
+ * @since 0.0.1
+ *
+ * @return string
+ */
+function bowl_bound_remove_menu_ids() {
+	return '';
+}
