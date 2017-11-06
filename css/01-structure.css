@@ -76,11 +76,6 @@
 	padding: 0 2rem 80px;
 }
 
-.video {
-
-	height: 575px;
-}
-
 #jacket #binder #site-footer section {
 	max-width: 1088px;
 }
@@ -105,4 +100,8 @@
 
 .travel-package {
 	height: 800px;
+}
+
+.video {
+	height: 575px;
 }
