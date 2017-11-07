@@ -1,0 +1,39 @@
+.splash h3,
+.splash p {
+	animation: slide-up-fade-in .4s 1 normal ease-out forwards;
+	opacity: 0;
+}
+
+.splash h3:after {
+	animation: underline .4s 1 normal ease-in-out forwards .8s;
+}
+
+.splash p {
+	animation-delay: .4s;
+}
+
+@keyframes slide-up-fade-in {
+
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes underline {
+
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+
+	100% {
+		opacity: 1;
+		width: 100%;
+	}
+}

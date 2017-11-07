@@ -1,0 +1,11 @@
+html {
+	background: #fff;
+}
+
+.gray-background {
+	background: #262626;
+}
+
+.section-wrapper.bottom-border {
+	border-bottom: 50px solid #717171;
+}
