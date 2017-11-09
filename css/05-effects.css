@@ -88,6 +88,10 @@
 	animation: slide-in .4s ease forwards 3.2s;
 }
 
+.hero--text {
+	mix-blend-mode: multiply;
+}
+
 @keyframes slide-in {
 
 	to {
