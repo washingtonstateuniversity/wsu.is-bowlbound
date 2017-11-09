@@ -40,14 +40,14 @@
 	padding: 0 2rem;
 }
 
-.splash {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+.hero {
+	margin: 0 auto;
+	max-width: 1500px;
+	padding: 64px 2rem 0;
 }
 
-.splash .column {
-	margin: 66px auto 0;
+.intro {
+	margin-top: -166px;
 }
 
 @media only screen and (min-width: 694px) {
@@ -90,10 +90,6 @@
 }
 
 /* Temporary */
-.splash {
-	height: 1030px;
-}
-
 .details {
 	height: 840px;
 }

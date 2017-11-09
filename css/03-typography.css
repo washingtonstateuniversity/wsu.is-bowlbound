@@ -100,7 +100,7 @@ h4 {
 	width: 100%;
 }
 
-.splash h3 {
+.intro h3 {
 	color: #a60f2d;
 	display: inline-block;
 	font-size: 23px;
@@ -108,7 +108,7 @@ h4 {
 	position: relative;
 }
 
-.splash h3:after {
+.intro h3:after {
 	background: #a60f2d;
 	bottom: 6px;
 	content: "";
@@ -119,7 +119,7 @@ h4 {
 	width: 0;
 }
 
-.splash p {
+.intro p {
 	color: #4c4c4c;
 	font-family: Graduate;
 	font-size: 16px;
@@ -213,7 +213,7 @@ h4 {
 }
 
 .footer a:last-of-type {
-	background: url(https://s3.wp.wsu.edu/uploads/sites/1763/2017/10/ico-up-arrow-thin-wht.png) no-repeat right top;
+	background: url(images/icon-up-arrow.png) no-repeat right top;
 	background-size: 20px;
 	float: right;
 	margin-right: 0;
