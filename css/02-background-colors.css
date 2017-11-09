@@ -6,6 +6,16 @@ html {
 	background: #262626;
 }
 
-.section-wrapper.bottom-border {
-	border-bottom: 50px solid #717171;
+.bottom-border {
+	border-bottom: 50px solid;
+	position: relative;
+}
+
+.bottom-border:after {
+	background: url(images/divider.gif);
+	bottom: -50px;
+	content: "";
+	height: 50px;
+	position: absolute;
+	width: 100%;
 }
