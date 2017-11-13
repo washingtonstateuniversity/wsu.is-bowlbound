@@ -127,6 +127,15 @@ h4 {
 	max-width: 50ch;
 }
 
+.launch-info h2 {
+	margin-bottom: 26px;
+	padding-left: 0;
+}
+
+.launch-info h2:after {
+	margin: 0;
+}
+
 .details {
 	color: #fff;
 }
