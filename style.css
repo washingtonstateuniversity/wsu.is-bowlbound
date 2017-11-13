@@ -22,6 +22,7 @@
 }
 
 #jacket #binder .max-1020 {
+	margin: 0 auto;
 	max-width: 1020px;
 }
 
@@ -62,6 +63,27 @@
 
 .intro {
 	margin-top: -166px;
+}
+
+.launch-info .column {
+	padding-top: 85px;
+}
+
+@media only screen and (max-width: 693px) {
+
+	.launch-info .two {
+		padding-top: 0;
+	}
+}
+
+#jacket #binder .details {
+	max-width: none;
+}
+
+.details .column {
+	padding-top: 132px;
+	position: static;
+
 }
 
 @media only screen and (min-width: 694px) {
@@ -109,7 +131,7 @@
 
 /* Temporary */
 .details {
-	height: 840px;
+	height: 842px;
 }
 
 .travel-package {
@@ -140,6 +162,11 @@ html {
 	height: 50px;
 	position: absolute;
 	width: 100%;
+}
+
+.social-media {
+	background: url(images/spirit-mark-white.svg) right 32px bottom no-repeat;
+	background-size: 172px;
 }
 
 body {
@@ -272,6 +299,68 @@ h4 {
 	font-weight: 100;
 	max-width: 50ch;
 }
+
+.launch-info h2 {
+	margin-bottom: 26px;
+	padding-left: 0;
+}
+
+.launch-info h2:after {
+	margin: 0;
+}
+
+.details {
+	color: #fff;
+}
+
+.details * {
+	position: relative;
+}
+
+.details--bowl-graphic {
+	display: block;
+	margin: 0 auto 55px;
+}
+
+.details--school,
+.details--vs {
+	box-sizing: border-box;
+	float: left;
+}
+
+.details--school {
+	font-family: Graduate;
+	padding: 19px 40px;
+	width: calc(50% - 65px);
+}
+
+.details--school:first-of-type {
+	text-align: right;
+}
+
+.details--name,
+.details--mascot,
+.details--day,
+.details--channel {
+	display: block;
+}
+
+.details--vs {
+	background: #a60f2d;
+	margin: 0 20px;
+	text-align: center;
+	width: 90px;
+}
+
+.details--event {
+	box-sizing: border-box;
+	clear: both;
+	font-family: Graduate;
+	margin-left: 50%;
+	padding-left: 1rem;
+	width: 50%;
+}
+
 
 .travel-package h2 {
 	margin-bottom: 10px;
@@ -676,5 +765,16 @@ h4 {
 		opacity: 1;
 		width: 100%;
 	}
+}
+
+
+#details {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.layered-image {
+	width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

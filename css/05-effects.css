@@ -163,3 +163,14 @@
 		width: 100%;
 	}
 }
+
+
+#details {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.layered-image {
+	width: 100%;
+}

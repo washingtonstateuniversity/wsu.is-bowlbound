@@ -127,6 +127,68 @@ h4 {
 	max-width: 50ch;
 }
 
+.launch-info h2 {
+	margin-bottom: 26px;
+	padding-left: 0;
+}
+
+.launch-info h2:after {
+	margin: 0;
+}
+
+.details {
+	color: #fff;
+}
+
+.details * {
+	position: relative;
+}
+
+.details--bowl-graphic {
+	display: block;
+	margin: 0 auto 55px;
+}
+
+.details--school,
+.details--vs {
+	box-sizing: border-box;
+	float: left;
+}
+
+.details--school {
+	font-family: Graduate;
+	padding: 19px 40px;
+	width: calc(50% - 65px);
+}
+
+.details--school:first-of-type {
+	text-align: right;
+}
+
+.details--name,
+.details--mascot,
+.details--day,
+.details--channel {
+	display: block;
+}
+
+.details--vs {
+	background: #a60f2d;
+	margin: 0 20px;
+	text-align: center;
+	width: 90px;
+}
+
+.details--event {
+	box-sizing: border-box;
+	clear: both;
+	font-family: Graduate;
+	margin-left: 50%;
+	padding-left: 1rem;
+	width: 50%;
+}
+
+
 .travel-package h2 {
 	margin-bottom: 10px;
 }
