@@ -24,6 +24,8 @@ function bowl_bound_enqueue_scripts() {
 	if ( has_category( '2017', get_the_ID() ) ) {
 		wp_dequeue_style( 'spine-custom-css' );
 		wp_enqueue_style( 'graduate', '//fonts.googleapis.com/css?family=Graduate' );
+		wp_enqueue_style( 'bowlbound-ie', get_stylesheet_directory_uri() . '/ie.css', array( 'spine-theme-child' ) );
+		wp_style_add_data( 'bowlbound-ie', 'conditional', 'IE' );
 	} else {
 		wp_dequeue_style( 'spine-theme-child' );
 	}
