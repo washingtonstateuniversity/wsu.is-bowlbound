@@ -1,18 +1,20 @@
+<?php if ( has_category( '2017', get_the_ID() ) ) { ?>
+
 <footer id="site-footer" class="gray-background">
 
 	<section class="row halves gutter pad-top social-media">
 		<div class="column one">
-			<p><strong><?php echo esc_html( 'Keep Connected' ); ?></strong></p>
+			<p><strong>Keep Connected</strong></p>
 			<ul>
-				<li><a href="#">wsualumni</a><br>
+				<li><a href="https://www.instagram.com/wsualumni/">wsualumni</a><br>
 				WSU Alumni Association Instagram</li>
-				<li><a href="#">@wsucougfb</a><br>
+				<li><a href="https://twitter.com/wsucougfb">@wsucougfb</a><br>
 				WSU Football Twitter</li>
-				<li><a href="#">@WSUAlumAssoc</a><br>
+				<li><a href="https://twitter.com/wsualumassoc">@WSUAlumAssoc</a><br>
 				WSU Alumni Association Twitter</li>
-				<li><a href="#">WSUCougars</a><br>
+				<li><a href="https://www.facebook.com/WSUCougars/">WSUCougars</a><br>
 				WSU Athletics Facebook</li>
-				<li><a href="#">WashingtonStateFootball</a><br>
+				<li><a href="https://www.facebook.com/WashingtonStateFootball">WashingtonStateFootball</a><br>
 				WSU Football Facebook</li>
 			</ul>
 		</div>
@@ -32,3 +34,6 @@
 	</section>
 
 </footer>
+
+<?php
+}
