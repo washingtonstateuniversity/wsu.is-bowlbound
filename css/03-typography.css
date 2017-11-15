@@ -43,21 +43,21 @@ h4 {
 }
 
 #site-header h1,
-#site-header ul {
+#site-header ul li a {
 	font-size: 12px;
 	font-weight: 600;
-	padding: 0;
+	line-height: normal;
+	padding: 22px 0;
 	text-transform: uppercase;
 }
 
 #site-header h1 {
 	color: #a60f2d;
-	line-height: normal;
-	padding: 21px 0;
 }
 
 #site-header ul {
 	display: flex;
+	padding: 0;
 }
 
 #site-header li {
@@ -72,8 +72,6 @@ h4 {
 #site-header li a {
 	color: #4c4c4c;
 	display: block;
-	line-height: normal;
-	padding: 22px 0;
 	position: relative;
 	transition: color .4s ease-in-out;
 }

@@ -29,6 +29,7 @@
 	border-top: 4px solid #a60f2d;
 	border-bottom: 1px solid #e8e8e8;
 	position: fixed;
+	top: 0;
 	width: 100vw;
 	z-index: 1;
 }
@@ -42,13 +43,26 @@
 }
 
 .hero {
-	margin: 0 auto;
+	height: 72vw;
+	margin: 64px auto 0;
+	max-height: 960px;
 	max-width: 1500px;
-	padding: 64px 2rem 0;
+	position: relative;
 }
 
-.intro {
-	margin-top: -166px;
+@media screen and (max-width: 791px) {
+
+	.hero {
+		height: calc(100vh - 64px);
+		max-height: 150vw;
+	}
+}
+
+.intro section {
+	bottom: -100%;
+	left: 0;
+	position: absolute;
+	right: 0;
 }
 
 .launch-info .column {
