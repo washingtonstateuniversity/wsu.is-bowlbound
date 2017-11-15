@@ -13,7 +13,7 @@
 }
 
 #jacket #binder #wsuwp-main {
-	margin-top: 0;
+	margin: 0;
 }
 
 #jacket #binder .row {
@@ -44,6 +44,13 @@
 	z-index: 1;
 }
 
+@media screen and (min-width: 990px) {
+
+	.admin-bar #site-header {
+		top: 32px;
+	}
+}
+
 #site-header hgroup {
 	box-sizing: border-box;
 	display: -webkit-box;
@@ -72,7 +79,7 @@
 	}
 }
 
-.intro section {
+.intro {
 	bottom: -100%;
 	left: 0;
 	position: absolute;
@@ -522,6 +529,10 @@ h4 {
 
 .btn.crimson:hover {
 	background: #ca1237;
+}
+
+.hero-symbols {
+	display: none;
 }
 
 #hero--spirit-mark {
