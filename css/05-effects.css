@@ -149,7 +149,7 @@
 }
 
 .hero .white-line {
-	animation: fade-in .6s ease-in-out forwards 3.8s, waver 3s ease-in-out infinite;
+	animation: fade-in .6s ease-in-out forwards 3.8s;
 	opacity: 0;
 }
 
