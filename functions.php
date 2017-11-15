@@ -20,7 +20,13 @@ add_action( 'wp_enqueue_scripts', 'bowl_bound_enqueue_scripts', 21 );
  */
 function bowl_bound_enqueue_scripts() {
 	wp_dequeue_script( 'wsu-spine' );
-	wp_enqueue_style( 'graduate', '//fonts.googleapis.com/css?family=Graduate' );
+
+	if ( has_category( '2017', get_the_ID() ) ) {
+		wp_dequeue_style( 'spine-custom-css' );
+		wp_enqueue_style( 'graduate', '//fonts.googleapis.com/css?family=Graduate' );
+	} else {
+		wp_dequeue_style( 'spine-theme-child' );
+	}
 }
 
 add_filter( 'nav_menu_css_class', 'bowl_bound_remove_menu_classes' );
