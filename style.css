@@ -8,6 +8,10 @@
  Version:        0.0.1
 */
 
+body > .screen-reader-shortcut {
+	display: none;
+}
+
 #jacket #binder {
 	max-width: none;
 }

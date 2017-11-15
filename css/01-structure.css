@@ -1,3 +1,7 @@
+body > .screen-reader-shortcut {
+	display: none;
+}
+
 #jacket #binder {
 	max-width: none;
 }
