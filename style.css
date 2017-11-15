@@ -39,6 +39,7 @@
 	border-top: 4px solid #a60f2d;
 	border-bottom: 1px solid #e8e8e8;
 	position: fixed;
+	top: 0;
 	width: 100vw;
 	z-index: 1;
 }
@@ -56,9 +57,19 @@
 }
 
 .hero {
-	margin: 0 auto;
+	height: 72vw;
+	margin: 64px auto 0;
+	max-height: 960px;
 	max-width: 1500px;
-	padding: 64px 0 0;
+	position: relative;
+}
+
+@media screen and (max-width: 791px) {
+
+	.hero {
+		height: calc(100vh - 64px);
+		max-height: 150vw;
+	}
 }
 
 .intro section {
@@ -517,14 +528,14 @@ h4 {
 	height: 167px;
 	position: absolute;
 	right: 2rem;
-	top: 114px;
+	top: 50px;
 	width: 170px;
 }
 
 @media screen and (max-width: 495px) {
 
 	#hero--spirit-mark {
-		top: 23vw;
+		top: 10vw;
 	}
 }
 
@@ -608,10 +619,11 @@ h4 {
 	}
 }
 
-#hero {
-	display: block;
-	height: auto;
-	width: 100%;
+#hero,
+#hero-mobile {
+	height: 100%;
+	position: absolute;
+	width: auto;
 }
 
 #hero .left {
@@ -753,20 +765,18 @@ h4 {
 }
 
 #hero-mobile {
-	display: none;
+	visibility: hidden;
+	width: 100%;
 }
 
 @media screen and (max-width: 791px) {
 
 	#hero {
-		display: none;
+		visibility: hidden;
 	}
 
 	#hero-mobile {
-		display: block;
-		height: calc(100vh - 64px);
-		max-height: 150vw;
-		width: 100vw;
+		visibility: visible;
 	}
 }
 

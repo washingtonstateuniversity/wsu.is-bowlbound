@@ -2,14 +2,14 @@
 	height: 167px;
 	position: absolute;
 	right: 2rem;
-	top: 114px;
+	top: 50px;
 	width: 170px;
 }
 
 @media screen and (max-width: 495px) {
 
 	#hero--spirit-mark {
-		top: 23vw;
+		top: 10vw;
 	}
 }
 
@@ -77,10 +77,11 @@
 	}
 }
 
-#hero {
-	display: block;
-	height: auto;
-	width: 100%;
+#hero,
+#hero-mobile {
+	height: 100%;
+	position: absolute;
+	width: auto;
 }
 
 #hero .left {
@@ -169,20 +170,18 @@
 }
 
 #hero-mobile {
-	display: none;
+	visibility: hidden;
+	width: 100%;
 }
 
 @media screen and (max-width: 791px) {
 
 	#hero {
-		display: none;
+		visibility: hidden;
 	}
 
 	#hero-mobile {
-		display: block;
-		height: calc(100vh - 64px);
-		max-height: 150vw;
-		width: 100vw;
+		visibility: visible;
 	}
 }
 
