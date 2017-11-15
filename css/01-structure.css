@@ -44,11 +44,14 @@
 .hero {
 	margin: 0 auto;
 	max-width: 1500px;
-	padding: 64px 2rem 0;
+	padding: 64px 0 0;
 }
 
-.intro {
-	margin-top: -166px;
+.intro section {
+	bottom: -100%;
+	left: 0;
+	position: absolute;
+	right: 0;
 }
 
 .launch-info .column {

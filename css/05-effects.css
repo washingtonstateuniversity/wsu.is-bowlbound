@@ -1,15 +1,31 @@
-#hero {
-	display: block;
-	height: auto;
-	width: 100%;
-}
-
 #hero--spirit-mark {
 	height: 167px;
 	position: absolute;
 	right: 2rem;
 	top: 114px;
 	width: 170px;
+}
+
+@media screen and (max-width: 495px) {
+
+	#hero--spirit-mark {
+		top: 23vw;
+	}
+}
+
+@media screen and (max-width: 606px) {
+
+	#hero--spirit-mark {
+		right: 5.56vw;
+	}
+}
+
+@media screen and (max-width: 747px) {
+
+	#hero--spirit-mark {
+		height: auto;
+		width: 22.75vw;
+	}
 }
 
 @media only screen and (min-width: 1086px) {
@@ -61,6 +77,12 @@
 	}
 }
 
+#hero {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
 #hero .left {
 	opacity: 0;
 	animation: fade-in .4s ease-in-out forwards 2s;
@@ -69,6 +91,11 @@
 #hero .right {
 	opacity: 0;
 	animation: fade-in .4s ease-in-out forwards 2.2s;
+}
+
+.hero--mobile-background {
+	opacity: 0;
+	animation: fade-in .4s ease-in-out forwards 2s;
 }
 
 @keyframes fade-in {
@@ -83,12 +110,22 @@
 	animation: slide-in .4s ease forwards 3s;
 }
 
+#hero-mobile .top {
+	opacity: 0;
+	animation: fade-in .1s ease forwards 2.5s, slide-in .4s ease forwards 3s;
+}
+
 .bottom {
 	transform: translateX(-81px);
 	animation: slide-in .4s ease forwards 3.2s;
 }
 
-.hero--text {
+#hero-mobile .bottom {
+	opacity: 0;
+	animation: fade-in .1s ease forwards 2.5s, slide-in .4s ease forwards 3.2s;
+}
+
+.multiply-blend {
 	mix-blend-mode: multiply;
 }
 
@@ -105,13 +142,13 @@
 	transform: translateY(2px);
 }
 
-#hero .crimson-line {
+.hero .crimson-line {
 	stroke-dasharray: 135;
 	stroke-dashoffset: 135;
 	animation: trace .2s ease-in-out forwards 1.4s;
 }
 
-#hero .white-line {
+.hero .white-line {
 	animation: fade-in .6s ease-in-out forwards 3.8s, waver 3s ease-in-out infinite;
 	opacity: 0;
 }
@@ -128,6 +165,24 @@
 
 	100% {
 		transform: translateX(0);
+	}
+}
+
+#hero-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 791px) {
+
+	#hero {
+		display: none;
+	}
+
+	#hero-mobile {
+		display: block;
+		height: calc(100vh - 64px);
+		max-height: 150vw;
+		width: 100vw;
 	}
 }
 
