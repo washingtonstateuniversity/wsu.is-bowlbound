@@ -1,3 +1,5 @@
+<?php if ( has_category( '2017', get_the_ID() ) ) { ?>
+
 <header id="site-header">
 
 	<hgroup class="max-1020">
@@ -23,3 +25,6 @@
 	</hgroup>
 
 </header>
+
+<?php
+}
