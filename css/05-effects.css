@@ -10,13 +10,6 @@
 	width: 170px;
 }
 
-@media screen and (max-width: 495px) {
-
-	#hero--spirit-mark {
-		top: 10vw;
-	}
-}
-
 @media screen and (max-width: 606px) {
 
 	#hero--spirit-mark {
@@ -29,6 +22,13 @@
 	#hero--spirit-mark {
 		height: auto;
 		width: 22.75vw;
+	}
+}
+
+@media screen and (max-width: 833px) {
+
+	#hero--spirit-mark {
+		top: 6vw;
 	}
 }
 
