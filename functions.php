@@ -9,7 +9,7 @@ add_filter( 'spine_child_theme_version', 'bowl_bound_theme_version' );
  * @return string
  */
 function bowl_bound_theme_version() {
-	return '0.0.2';
+	return '0.0.3';
 }
 
 add_action( 'wp_enqueue_scripts', 'bowl_bound_enqueue_scripts', 21 );
