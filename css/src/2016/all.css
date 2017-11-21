@@ -1,0 +1,604 @@
+.thanks {
+	font-size: 1rem;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+html body #jacket #binder main .page .videoBG {
+	width: 100vw !important;
+	height: 100vh !important;
+}
+
+#jacket {
+	background-color: #2a3033;
+	border-top: solid 4px #981e32;
+}
+
+* {
+	transition: all ease-in-out .5s;
+}
+
+#binder.fluid main {
+	background-color: #fff;
+	margin-left: 0;
+}
+
+#spine {
+	display: none;
+}
+
+body {
+	color: #2a3033;
+}
+
+.main-header {
+	background: none;
+	height: auto;
+	background-size: cover;
+}
+
+.home .main-header {
+	background-size: auto;
+}
+
+section {
+	z-index: 1;
+}
+
+.intro {
+	background-size: cover;
+	min-height: 83vh;
+	width: 100%;
+	position: relative;
+	padding-bottom: 6em;
+}
+
+.couglogo {
+	padding: 7vw 0 0;
+	width: 170px;
+	filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, .45));
+}
+
+.couglogo2 {
+	margin: 2em auto 0;
+	width: 170px;
+}
+
+section {
+	background: #fff;
+}
+
+p {
+	font-size: 1em;
+}
+
+h1 {
+	color: #fff;
+	text-shadow: 2px 2px 14px rgba(0, 0, 0, .45);
+}
+
+h1,
+h2,
+h5 {
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: calc(6vw + 6vh + 2vmin);
+	line-height: .85em;
+	padding: .25em 0 0;
+	margin: 0;
+	letter-spacing: -2px;
+}
+
+h2 {
+	font-size: calc(4vw + 4vh + 2vmin);
+	line-height: 1em;
+	color: #ffb81c;
+	padding-top: .25em;
+}
+
+h2 a,
+h2 a:hover {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	color: #fff;
+	background-color: #00398e;
+	background-color: rgba(26, 52, 97, 1);
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+h2 a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	margin: auto;
+	height: 6px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+h2 a:hover:after,
+h2 a:active:after,
+h2 a:focus:after {
+	color: #ffb81c;
+	width: 100%;
+	background: #fff;
+}
+
+h3 {
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-size: 4em;
+	text-transform: uppercase;
+	padding-top: .5em;
+	line-height: 1em;
+	letter-spacing: 0;
+	color: #981e32;
+}
+
+/* -------------------- */
+h3 a,
+h3 a:hover {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	color: #981e32;
+}
+
+h3 a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	margin: auto;
+	height: 3px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+h3 a:hover:after,
+h3 a:active:after,
+h3 a:focus:after {
+	color: #981e32;
+	width: 100%;
+	background: #5e6a71;
+}
+
+h3 a:active:after {
+	background: #981e32;
+}
+
+/* -------------------- */
+h4 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	line-height: 1.25em;
+	padding: .5em 0;
+	color: #981e32;
+}
+
+h5 {
+	font-size: calc(1vw + 1vh + 2vmin);
+	padding-top: .5em;
+	line-height: 1em;
+	letter-spacing: 0;
+	color: #fff;
+}
+
+ul + h4 {
+	margin-top: 2em;
+}
+
+.event-note {
+	font-size: .85em;
+	font-style: italic;
+	color: #b5babe;
+	font-weight: 400;
+	margin-top: -1em;
+}
+
+.social {
+	font-weight: 300;
+	color: #d7dadb;
+}
+
+.hashtag {
+	color: #5e6a71;
+	font-weight: 800;
+	font-size: calc(.5vw + .5vh + 1vmin);
+	padding: .5em 0 .25em;
+	line-height: .85em;
+}
+
+.hashtag a,
+.hashtag a:hover {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	color: #981e32;
+}
+
+.hashtag a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	margin: auto;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.hashtag a:hover:after,
+.hashtag a:active:after,
+.hashtag a:focus:after {
+	color: #5e6a71;
+	width: 100%;
+	background: #5e6a71;
+}
+
+.hashtag a:active:after {
+	background: #981e32;
+}
+
+.social + .hashtag {
+	padding-top: .5em;
+}
+
+.hash-note {
+	font-weight: 300;
+	color: #5e6a71;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.sponsor {
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: calc(1vw + 1vh + 1vmin);
+	line-height: .85em;
+	padding: .5em 0 0;
+	margin: 0 0 -.75em;
+	color: #ffb81c;
+}
+
+.bowl-logo {
+	width: 500px;
+	max-width: 75%;
+}
+
+.btop {
+	border-top: solid 1px #d7dadb;
+}
+
+.gray {
+	color: #5e6a71;
+}
+
+.lightgray {
+	color: #d7dadb;
+}
+
+.end-img {
+	background: url(https://s3.wp.wsu.edu/uploads/sites/1096/2015/12/stadium-cougs.jpg) #fff no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	position: relative;
+	padding-bottom: 550px;
+	margin-bottom: 0;
+}
+
+/*  ------  max ------  */
+.maxed {
+	max-width: 1400px;
+}
+
+.game-logo {
+	text-align: center;
+}
+
+/*  ------  BUY ------  */
+.full {
+	max-width: 100%;
+}
+
+.buy {
+	border-top: solid 1px #7c1929;
+	border-bottom: solid 1px #7c1929;
+	background-color: #981e32;
+	height: auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.buy .cta {
+	margin-top: 0 auto;
+	max-width: 100%;
+	color: #fff;
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+}
+
+.buy .cta a,
+.buy .cta a:hover {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #fff;
+	box-shadow: none;
+	padding: 1rem 3rem;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: background .5s cubic-bezier(.33, .66, .66, 1), border 1s ease(.33, .66, .66, 1);
+}
+
+.buy .cta a:hover {
+	color: #981e32;
+	background-color: #fff;
+}
+
+/*--- ---*/
+.none {
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.action a {
+	list-style: none;
+	background: #eff0f1;
+	border: solid 1px #981e32;
+	color: #981e32;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+	width: 50%;
+	padding: 1em .75em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+
+.action a:hover,
+.action a:active {
+	color: #fff;
+	background-color: #981e32;
+}
+
+.register a {
+	list-style: none;
+	background: #eff0f1;
+	border: solid 1px #981e32;
+	color: #981e32;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	letter-spacing: 2px;
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+	padding: .5em .75em;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 .5em 0 -.5em;
+}
+
+.register a:hover,
+.register a:active {
+	color: #fff;
+	background-color: #981e32;
+}
+
+.moreinfo {
+	margin: 20px auto;
+	color: #fff;
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-weight: 700;
+}
+
+.moreinfo a,
+.moreinfo a:hover {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #fff;
+	box-shadow: none;
+	padding: 1rem 3rem;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #5e6a71;
+	transition: background .5s cubic-bezier(.33, .66, .66, 1);
+	transition: border 1s ease (.33, .66, .66, 1);
+}
+
+.moreinfo a:hover {
+	color: #981e32;
+	background-color: #fff;
+}
+
+/* Sun Bowl */
+.sun.intro {
+	padding-bottom: 3em;
+	display: flex;
+	align-items: flex-end;
+	height: 90vh;
+	min-height: auto;
+	position: fixed;
+	top: 0;
+	background: none;
+}
+
+.full {
+	margin-top: 90vh;
+}
+
+.matchup-img {
+	width: 100%;
+	margin-top: 6em;
+}
+
+.pad-more {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.pad-low {
+	padding-bottom: 3rem;
+}
+
+.pregame {
+	padding: 2rem 0 1rem;
+	width: 200px;
+	max-width: 75%;
+}
+
+/* Important Dates Table */
+.table-dates {
+	margin-top: 1em;
+}
+
+.table-dates tr {
+	border-top: solid 1px #f3f3f3;
+}
+
+.table-dates .td1 {
+	font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+	width: 25%;
+	min-width: 100px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #981e32;
+	padding: 15px;
+	margin: 0;
+	border-right: solid 1px #f3f3f3;
+}
+
+.table-dates .td2 {
+	padding: 15px 15px 25px;
+	margin: 0;
+}
+
+/* ---- */
+.intro.sun h2 {
+	display: inline-block;
+	position: relative;
+}
+
+.intro.sun h2:before,
+.intro.sun h2:after {
+	content: "";
+	background: url(https://s3.wp.wsu.edu/uploads/sites/1096/2016/12/holiday-bowl-iconSM.png);
+	background-size: cover;
+	position: absolute;
+	width: .5em;
+	height: .5em;
+	z-index: 3;
+	top: 3.25rem;
+}
+
+.intro.sun h2 a {
+	padding: 0 5rem;
+}
+
+.intro.sun h2:before {
+	left: 1rem;
+}
+
+.intro.sun h2:after {
+	right: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.lead-section {
+		display: none !important;
+	}
+
+	.intro.sun h2:before,
+	.intro.sun h2:after {
+		display: none;
+	}
+
+	.sun.intro {
+		position: relative;
+	}
+
+	.full {
+		margin-top: 0;
+	}
+
+	.videoBG {
+		display: none;
+	}
+
+	.sun.intro {
+		height: auto;
+		padding-bottom: 2rem;
+		background: url(https://s3.wp.wsu.edu/uploads/sites/1096/2016/11/Marks-Cracraft-2016-OSU-Celebration.jpg) center no-repeat;
+		background-size: cover;
+	}
+
+	.sun.intro .intro.sun {
+		height: auto;
+		padding-bottom: 0;
+	}
+
+	.videoBG_wrapper {
+		position: relative !important;
+		height: auto !important;
+	}
+}
+
+@media screen and (max-width: 791px) {
+
+	#binder.fluid main {
+		margin-top: 0;
+	}
+
+	.intro.sun h2 a {
+		padding: 0;
+	}
+
+	.action a {
+		width: 90%;
+	}
+
+	.end-img {
+		padding-bottom: 200px;
+	}
+
+	.couglogo {
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 693px) {
+
+	.spacing-loose .gutter .column:not(.gutterless) {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	.table-dates .td1 {
+		min-width: auto;
+	}
+}
