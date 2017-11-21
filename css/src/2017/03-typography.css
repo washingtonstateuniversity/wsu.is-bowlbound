@@ -281,7 +281,7 @@ h4 {
 }
 
 .footer a:last-of-type {
-	background: url(images/icon-up-arrow.png) no-repeat right top;
+	background: url(../images/icon-up-arrow.png) no-repeat right top;
 	background-size: 20px;
 	float: right;
 	margin-right: 0;

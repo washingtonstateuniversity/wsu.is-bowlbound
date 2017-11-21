@@ -12,7 +12,7 @@ html {
 }
 
 .bottom-border:after {
-	background: url(images/divider.gif);
+	background: url(../images/divider.gif);
 	bottom: -50px;
 	content: "";
 	height: 50px;
@@ -21,6 +21,6 @@ html {
 }
 
 .social-media {
-	background: url(images/spirit-mark-white.svg) right 32px bottom no-repeat;
+	background: url(../images/spirit-mark-white.svg) right 32px bottom no-repeat;
 	background-size: 172px;
 }
