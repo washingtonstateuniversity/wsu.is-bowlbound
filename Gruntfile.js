@@ -9,6 +9,7 @@ module.exports = function( grunt ) {
 		concat: {
 			years: {
 				files: {
+					"css/2016.css": [ "css/src/2016/*.css" ],
 					"css/2017.css": [ "css/src/2017/*.css" ]
 				}
 			}
