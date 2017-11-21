@@ -26,7 +26,7 @@ module.exports = function( grunt ) {
 				]
 			},
 			dist: {
-				src: "css/*.css"
+				src: [ "css/*.css", "!css/2017-ie.css" ]
 			}
 		},
 
