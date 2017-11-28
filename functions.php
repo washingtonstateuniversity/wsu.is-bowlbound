@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/includes/2017-svgs.php';
+
 add_filter( 'spine_child_theme_version', 'bowl_bound_theme_version' );
 /**
  * Provides a theme version for use in cache busting.
