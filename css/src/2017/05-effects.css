@@ -227,3 +227,15 @@
 	position: absolute;
 	top: 0;
 }
+
+#footer-hero {
+	display: block;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	width: auto;
+}
+
+#footer-hero svg {
+	mix-blend-mode: multiply;
+}

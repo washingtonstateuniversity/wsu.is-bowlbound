@@ -123,6 +123,12 @@ body > .screen-reader-shortcut {
 	padding: 0 2rem 80px;
 }
 
+.footer-hero {
+	height: 30vw;
+	max-height: 575px;
+	position: relative;
+}
+
 #jacket #binder #site-footer section {
 	max-width: 1088px;
 }
