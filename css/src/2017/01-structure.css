@@ -126,6 +126,10 @@ body > .screen-reader-shortcut {
 	text-align: center;
 }
 
+.events-header {
+	z-index: 1;
+}
+
 .events-header .column {
 	padding-top: 100px;
 	padding-bottom: 124px;
