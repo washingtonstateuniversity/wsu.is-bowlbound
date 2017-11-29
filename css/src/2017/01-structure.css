@@ -97,15 +97,32 @@ body > .screen-reader-shortcut {
 
 }
 
+.hidden-overflow {
+	overflow: hidden;
+}
+
 @media only screen and (min-width: 694px) {
 
 	.travel-package {
 		align-items: center;
 		display: flex;
 	}
+
+	.travel-package .one {
+		order: 1;
+	}
+
+	#binder .travel-package--details {
+		padding: 30px 2rem 0;
+	}
 }
 
-.travel-package .one {
+#binder .travel-package--image {
+	padding: 0;
+}
+
+#binder .travel-package--details {
+	padding: 0 2rem 30px;
 	text-align: center;
 }
 
@@ -143,14 +160,9 @@ body > .screen-reader-shortcut {
 }
 
 /* Temporary */
-.details {
-	height: 842px;
-}
+@media only screen and (min-width: 694px) {
 
-.travel-package {
-	height: 800px;
-}
-
-.video {
-	height: 575px;
+	.details {
+		height: 842px;
+	}
 }

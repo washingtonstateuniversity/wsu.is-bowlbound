@@ -7,7 +7,7 @@ html {
 }
 
 .bottom-border {
-	border-bottom: 50px solid;
+	border-bottom: 50px solid transparent;
 	position: relative;
 }
 
@@ -18,6 +18,16 @@ html {
 	height: 50px;
 	position: absolute;
 	width: 100%;
+}
+
+.bottom-border.hidden-overflow {
+	border-bottom: none;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.bottom-border.hidden-overflow:after {
+	bottom: 0;
 }
 
 .social-media {
