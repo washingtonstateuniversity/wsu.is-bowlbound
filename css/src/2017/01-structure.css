@@ -92,9 +92,13 @@ body > .screen-reader-shortcut {
 }
 
 .details .column {
+	padding-bottom: 100px;
 	padding-top: 132px;
 	position: static;
+}
 
+.hidden-overflow {
+	overflow: hidden;
 }
 
 @media only screen and (min-width: 694px) {
@@ -103,10 +107,27 @@ body > .screen-reader-shortcut {
 		align-items: center;
 		display: flex;
 	}
+
+	.travel-package .one {
+		order: 1;
+	}
+
+	#binder .travel-package--details {
+		padding: 30px 2rem 0;
+	}
 }
 
-.travel-package .one {
+#binder .travel-package--image {
+	padding: 0;
+}
+
+#binder .travel-package--details {
+	padding: 0 2rem 30px;
 	text-align: center;
+}
+
+.events-header {
+	z-index: 1;
 }
 
 .events-header .column {
@@ -140,17 +161,4 @@ body > .screen-reader-shortcut {
 
 .footer .column {
 	padding-bottom: 84px;
-}
-
-/* Temporary */
-.details {
-	height: 842px;
-}
-
-.travel-package {
-	height: 800px;
-}
-
-.video {
-	height: 575px;
 }

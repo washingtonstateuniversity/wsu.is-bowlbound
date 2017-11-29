@@ -223,9 +223,61 @@
 }
 
 #wide-receiver {
+	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
+	width: auto;
+}
+
+@media screen and (max-width: 1952px) {
+
+	#wide-receiver {
+		left: calc(-1 * (-100vw + 1952px));
+	}
+}
+
+@media screen and (max-width: 989px) {
+
+	#wide-receiver {
+		display: none;
+	}
+}
+
+#running-back {
+	height: auto;
+	margin: -80px 0 0 -60%;
+	width: 200%;
+}
+
+#offensive-line {
+	height: auto;
+	margin: -100px 0 0 -45%;
+	width: 150%;
+}
+
+#quarterback {
+	height: auto;
+	margin-top: -16px;
+	width: 140%;
+}
+
+@media only screen and (max-width: 693px) {
+
+	#running-back {
+		margin: 0 0 -20px -35%;
+		width: 170%;
+	}
+
+	#offensive-line {
+		margin: -200px 0 -60px -32%;
+		width: 240%;
+	}
+
+	#quarterback {
+		margin: -50px 0 -50px -10%;
+		width: 200%;
+	}
 }
 
 #footer-hero {

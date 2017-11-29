@@ -155,8 +155,21 @@ h4 {
 
 .details--school {
 	font-family: Graduate;
-	padding: 19px 40px;
+	font-size: 18px;
+	padding: 36px 20px;
+	position: relative;
 	width: calc(50% - 65px);
+}
+
+.details--school:before {
+	background: #a60f2d;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 22px;
+	width: 100%;
 }
 
 .details--school:first-of-type {
@@ -170,9 +183,34 @@ h4 {
 	display: block;
 }
 
+.details--mascot {
+	font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.1;
+	padding-bottom: 14px;
+	text-transform: uppercase;
+}
+
+.details--conference,
+.details--standings {
+	color: #717171;
+	font-size: 16px;
+}
+
+.details--conference {
+	border-right: 1px solid #717171;
+	margin-right: 16px;
+	padding-right: 16px;
+}
+
 .details--vs {
 	background: #a60f2d;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;
 	margin: 0 20px;
+	padding: 0 0 5px;
 	text-align: center;
 	width: 90px;
 }
@@ -181,11 +219,83 @@ h4 {
 	box-sizing: border-box;
 	clear: both;
 	font-family: Graduate;
+	font-size: 24px;
+	line-height: 1.2;
 	margin-left: 50%;
-	padding-left: 1rem;
+	padding: 116px 0 0 1rem;
+	text-transform: uppercase;
 	width: 50%;
 }
 
+.details--day {
+	font-size: 16px;
+	letter-spacing: 5px;
+	padding-bottom: 22px;
+	position: relative;
+}
+
+.details--day:after {
+	background: #a60f2d;
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+.details--time,
+.details--channel {
+	color: #a60f2d;
+}
+
+.details--channel {
+	padding-top: 6px;
+}
+
+@media screen and (max-width: 989px) {
+
+	#binder .details .column {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		text-align: center;
+	}
+
+	.details--school,
+	.details--vs {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.details .details--school {
+		display: inline-block;
+		margin-top: 140px;
+		text-align: center;
+		width: auto;
+	}
+
+	.details--event {
+		font-size: 18px;
+		margin-left: 0;
+		padding: 56px 0 0;
+		text-align: left;
+		width: auto;
+	}
+
+	.details--day:after {
+		min-width: 325px;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+
+	.details .details--school,
+	.details--day:after {
+		min-width: none;
+		width: 100%;
+	}
+}
 
 .travel-package h2 {
 	margin-bottom: 10px;
