@@ -249,12 +249,52 @@ h4 {
 	color: #a60f2d;
 }
 
-.details--time {
-	padding-left: 1ch;
-}
-
 .details--channel {
 	padding-top: 6px;
+}
+
+@media screen and (max-width: 989px) {
+
+	#binder .details .column {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		text-align: center;
+	}
+
+	.details--school,
+	.details--vs {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.details .details--school {
+		display: inline-block;
+		margin-top: 140px;
+		text-align: center;
+		width: auto;
+	}
+
+	.details--event {
+		font-size: 18px;
+		margin-left: 0;
+		padding: 56px 0 0;
+		text-align: left;
+		width: auto;
+	}
+
+	.details--day:after {
+		min-width: 325px;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+
+	.details .details--school,
+	.details--day:after {
+		min-width: none;
+		width: 100%;
+	}
 }
 
 .travel-package h2 {

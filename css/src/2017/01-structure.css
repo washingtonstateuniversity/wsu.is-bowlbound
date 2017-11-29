@@ -92,9 +92,9 @@ body > .screen-reader-shortcut {
 }
 
 .details .column {
+	padding-bottom: 100px;
 	padding-top: 132px;
 	position: static;
-
 }
 
 .hidden-overflow {
@@ -161,12 +161,4 @@ body > .screen-reader-shortcut {
 
 .footer .column {
 	padding-bottom: 84px;
-}
-
-/* Temporary */
-@media only screen and (min-width: 694px) {
-
-	.details {
-		height: 842px;
-	}
 }
