@@ -110,22 +110,22 @@
 	}
 }
 
-.top {
+.hero--top {
 	transform: translateX(-70px);
 	animation: slide-in .4s ease forwards 3s;
 }
 
-#hero-mobile .top {
+#hero-mobile .hero--top {
 	opacity: 0;
 	animation: fade-in .1s ease forwards 2.5s, slide-in .4s ease forwards 3s;
 }
 
-.bottom {
+.hero--bottom {
 	transform: translateX(-81px);
 	animation: slide-in .4s ease forwards 3.2s;
 }
 
-#hero-mobile .bottom {
+#hero-mobile .hero--bottom {
 	opacity: 0;
 	animation: fade-in .1s ease forwards 2.5s, slide-in .4s ease forwards 3.2s;
 }
@@ -252,8 +252,16 @@
 
 #offensive-line {
 	height: auto;
-	margin: -100px 0 0 -45%;
-	width: 150%;
+	margin: -100px 0 0 -8vw;
+	width: 57vw;
+}
+
+@media only screen and (min-width: 1420px) {
+
+	#offensive-line {
+		margin-left: -114px;
+		width: 810px;
+	}
 }
 
 #quarterback {
@@ -288,6 +296,69 @@
 	width: auto;
 }
 
-#footer-hero svg {
-	mix-blend-mode: multiply;
+#footer-hero .crimson-line,
+#footer-hero .white-line {
+	stroke-dasharray: 142;
+	stroke-dashoffset: 142;
+	transition: stroke-dashoffset .2s ease-in-out;
+}
+
+#footer-hero .white-line {
+	transition-delay: .8s;
+}
+
+#footer-hero.start-animation .crimson-line,
+#footer-hero.start-animation .white-line {
+	stroke-dashoffset: 0;
+}
+
+.footer-hero--bw,
+.footer-hero--overlay,
+.footer-hero--color {
+	opacity: 0;
+	transition: opacity .4s ease-in-out .4s;
+}
+
+.start-animation .footer-hero--bw,
+.start-animation .footer-hero--overlay,
+.start-animation .footer-hero--color {
+	opacity: 1;
+}
+
+.footer-hero--color {
+	transition-delay: 2s;
+	transition-duration: .6s;
+}
+
+.footer-hero--top {
+	opacity: 0;
+	transform: translateX(45px);
+	transition: opacity 0s ease .8s, transform .4s ease-in-out 1.2s;
+}
+
+.footer-hero--bottom {
+	opacity: 0;
+	transform: translateX(95px);
+	transition: opacity 0s ease .8s, transform .4s ease-in-out 1.6s;
+}
+
+.start-animation .footer-hero--top,
+.start-animation .footer-hero--bottom {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animate > * {
+	opacity: 0;
+	transform: translateY(60px);
+	transition: opacity .4s, transform ease-in-out .4s;
+}
+
+.animate > .animated {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.parallax svg {
+	position: relative;
 }

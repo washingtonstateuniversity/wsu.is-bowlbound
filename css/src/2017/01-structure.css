@@ -35,7 +35,7 @@ body > .screen-reader-shortcut {
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: 1;
+	z-index: 2;
 }
 
 @media screen and (min-width: 990px) {
