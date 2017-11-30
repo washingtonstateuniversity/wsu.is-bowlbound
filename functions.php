@@ -33,6 +33,7 @@ function bowl_bound_enqueue_scripts() {
 		wp_enqueue_style( 'bowlbound-2017', get_stylesheet_directory_uri() . '/css/2017.css', array( 'graduate' ), bowl_bound_theme_version() );
 		wp_enqueue_style( 'bowlbound-2017-ie', get_stylesheet_directory_uri() . '/css/2017-ie.css', array( 'bowlbound-2017' ), bowl_bound_theme_version() );
 		wp_style_add_data( 'bowlbound-2017-ie', 'conditional', 'IE' );
+		wp_enqueue_script( 'bowlbound-2017', get_stylesheet_directory_uri() . '/js/2017.min.js', array( 'jquery' ), bowl_bound_theme_version(), true );
 	}
 }
 
