@@ -1,34 +1,44 @@
 .btn {
+	margin-top: 20px;
+}
+
+.btn + .btn {
+	margin-top: 10px;
+}
+
+.btn + h4 {
+	margin-top: 30px;
+}
+
+.btn a {
 	border-radius: 2px;
 	box-sizing: border-box;
 	display: inline-block;
 	font-weight: 600;
-	margin-top: 20px;
-	margin-bottom: 30px;
 	min-width: 240px;
 	padding: 8px 16px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.btn.white {
+.btn.white a {
 	border: 1px solid #4c4c4c;
 	color: #4c4c4c;
 	transition: background .4s ease-in-out, color .4s ease-in-out;
 }
 
-.btn.white:hover {
+.btn.white a:hover {
 	background: #4c4c4c;
 	color: #fff;
 }
 
-.btn.crimson {
+.btn.crimson a {
 	background: #a60f2d;
 	color: #fff;
 	padding: 9px 16px;
 	transition: background .4s ease-in-out;
 }
 
-.btn.crimson:hover {
+.btn.crimson a:hover {
 	background: #ca1237;
 }

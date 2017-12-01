@@ -11,7 +11,7 @@ add_filter( 'spine_child_theme_version', 'bowl_bound_theme_version' );
  * @return string
  */
 function bowl_bound_theme_version() {
-	return '0.0.5';
+	return '0.0.6';
 }
 
 add_action( 'wp_enqueue_scripts', 'bowl_bound_enqueue_scripts', 21 );
@@ -33,6 +33,7 @@ function bowl_bound_enqueue_scripts() {
 		wp_enqueue_style( 'bowlbound-2017', get_stylesheet_directory_uri() . '/css/2017.css', array( 'graduate' ), bowl_bound_theme_version() );
 		wp_enqueue_style( 'bowlbound-2017-ie', get_stylesheet_directory_uri() . '/css/2017-ie.css', array( 'bowlbound-2017' ), bowl_bound_theme_version() );
 		wp_style_add_data( 'bowlbound-2017-ie', 'conditional', 'IE' );
+		wp_enqueue_script( 'bowlbound-2017', get_stylesheet_directory_uri() . '/js/2017.min.js', array( 'jquery' ), bowl_bound_theme_version(), true );
 	}
 }
 
