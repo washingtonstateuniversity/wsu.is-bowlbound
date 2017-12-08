@@ -31,18 +31,16 @@
 	// page with an animating section in the viewport.
 	slide_up_fade_in();
 
-	// Handles the parallax effect.
-	function parallax() {
-		var offset = ( ( 989 < $( window ).width() ) && $( "body" ).hasClass( "admin-bar" ) ) ? 96 : 64;
+	// Trigger the team logo visibility animation.
+	function team_logos() {
+		var window_height = $( window ).height();
 
-		$( ".parallax" ).each( function() {
-			var	$element = $( this ).find( ".animated" ),
-				$section = $( this ).closest( "section" ),
-				section = $section[ 0 ].getBoundingClientRect(),
-				top_value = -1.25 * ( section.top - offset );
+		$( ".details--school" ).each( function() {
+			var $element = $( this ),
+				element = this.getBoundingClientRect();
 
-			if ( offset > section.top && offset * 2.5 < section.bottom - $element.height() ) {
-				$element.css( "top", top_value + "px" );
+			if ( element.top <= window_height ) {
+				$element.addClass( "animated" );
 			}
 		} );
 	}
@@ -58,10 +56,7 @@
 
 	$( window ).scroll( function() {
 		window.requestAnimationFrame( slide_up_fade_in );
-
-		if ( 693 < $( window ).width() ) {
-			window.requestAnimationFrame( parallax );
-		}
+		window.requestAnimationFrame( team_logos );
 
 		if ( !$footer_hero.hasClass( "start-animation" ) ) {
 			window.requestAnimationFrame( footer_hero );
