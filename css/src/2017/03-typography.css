@@ -145,6 +145,7 @@ h4 {
 .details--bowl-graphic {
 	display: block;
 	margin: 0 auto 55px;
+	width: 180px;
 }
 
 .details--school,
@@ -172,7 +173,7 @@ h4 {
 	width: 100%;
 }
 
-.details--school:first-of-type {
+.school-wsu:first-of-type {
 	text-align: right;
 }
 
@@ -265,6 +266,10 @@ h4 {
 	.details--vs {
 		float: none;
 		margin: 0 auto;
+	}
+
+	.details--vs {
+		margin-bottom: 20px;
 	}
 
 	.details .details--school {
