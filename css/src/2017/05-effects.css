@@ -362,3 +362,43 @@
 .parallax svg {
 	position: relative;
 }
+
+.details--school:after {
+	background-repeat: no-repeat;
+	bottom: 100%;
+	content: "";
+	height: 139px;
+	left: 0;
+	margin: 0 auto -23px;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	transition: opacity .4s ease;
+}
+
+.details--school.animated:after {
+	opacity: 1;
+}
+
+.school-wsu:after {
+	background-image: url(../images/cougs.svg);
+	width: 174px;
+}
+
+.school-msu:after {
+	background-image: url(../images/spartans.svg);
+	width: 134px;
+}
+
+@media screen and (min-width: 990px) {
+
+	.school-wsu:after {
+		left: auto;
+		right: 80px;
+	}
+
+	.school-msu:after {
+		left: 80px;
+		right: auto;
+	}
+}
